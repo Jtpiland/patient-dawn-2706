@@ -35,7 +35,6 @@ RSpec.describe 'Competition Show Page' do
   end
 
   it 'displays the average age of all the players in the competition' do
-    require "pry"; binding.pry
-    expect(page).to have_content('Average Age of Player in Competiton: 20')
+    expect(page).to have_content('Average Age of Players in Competition: 20.0')
   end
 end
