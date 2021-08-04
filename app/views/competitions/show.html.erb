@@ -9,3 +9,11 @@
 <% end %>
 
 <h3><%= "Average Age of Players in Competition: #{@competition.players.average_age}" %></h3>
+
+<%= form_with url: competition_competition_teams_path(@competition), local: true do |f| %>
+<%= f.label :nickname %>
+<%= f.text_field :nickname %>
+<%= f.label :hometown %>
+<%= f.text_field :hometown %>
+<%= f.submit 'Register New Team' %>
+<% end %>
